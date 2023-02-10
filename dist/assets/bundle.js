@@ -1,0 +1,1 @@
+(()=>{"use strict";var o=document.querySelector("body");console.log("asfas"),console.log("hello from app.js");var e="my ass is ".concat(43," inches wide"),s=function(o){console.log("hello"+o)};console.log("testing"),console.log("testing"),console.log("testing"),s(e),s(e),s(e),s(e),o.style.background="grey"})();

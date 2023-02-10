@@ -1,0 +1,20 @@
+{
+  "name": "babel-webpack",
+  "version": "1.0.0",
+  "description": "revesion on babel and webpack",
+  "main": "index.js",
+  "scripts": {
+    "build": "node_modules/.bin/webpack --mode production",
+    "serve": "webpack-dev-server --mode development"
+  },
+  "author": "Tarek khwaiss",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "babel-loader": "^9.1.2"
+  }
+}
