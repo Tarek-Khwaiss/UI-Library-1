@@ -5,12 +5,111 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webpack and babel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Outfit:wght@200&family=Raleway:wght@200&display=swap"
+        rel="stylesheet">
+
+    <title>Vanilla JS lib</title>
+    <style>
+        body {
+            font-size: 1.5em;
+            font-family: 'Outfit', sans-serif;
+            background-color: #FFFDE4;
+            color: #82826D;
+        }
+
+        .container {
+            margin: 50px;
+            margin-top: 80px;
+        }
+
+        .center {
+            width: 50px;
+            height: 50px;
+            position: relative;
+            right: -50%;
+        }
+
+        a {
+            text-decoration: none;
+            color: #444451;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Welcome to a webpack and babel template</h1>
+    <div class="container">
+        <header>
+            <img class="center" src="assets/js.png">
+        </header>
+        <p>VanillaJS is a name to refer to using JS without any additional libraries like
+            <span data-message="The most used js library" class="tooltip"><a href="https://jquery.com"
+                    target="_blank">jQuerys</a></span> back in
+            the days. People use it as a joke to remind other developers that many things can be done nowadays without
+            the need for additional JavaScript libraries.
+        </p>
 
+        <div class="drop-down">
+            <div class="trigger">The Vanilla JS "framework" joke</div>
+            <div class="content">
+                The history of the Vanilla JS site, which poses as a "JS framework" site, is short but funny. Eric Wastl
+                created it in 2012, using a bit of trolling and confusion to hammer home a point: you can often use
+                plain
+                JavaScript instead of additional JS frameworks or libraries.
+                While Eric didn't coin the term per se, his site definitely helped popularize it.
+            </div>
+            <div class="drop-down">
+                <div class="trigger">The state of modern, plain JavaScript</div>
+                <div class="content">
+                    Historically speaking, developers needed to bypass plain JavaScript for MANY tasks, be it to make
+                    their
+                    code behave consistently across browsers or just to go beyond what Javascript offered at the time.
+                    We're
+                    talking IE 6-7 days. Developers often defaulted to jQuery in the process. But this long-lasting
+                    reflex
+                    of relying on external libraries is now irrelevant, thanks to the evolution of the ECMAScript spec
+                    and
+                    modern browsers keeping up with it more closely.
+                </div>
+            </div>
+        </div>
+        <h2>JS Frameworks</h2>
+        <div class="tabs">
+            <ul>
+                <li class="trigger active" data-target="react">ReactJs</li>
+                <li class="trigger" data-target="angular">Angular</li>
+                <li class="trigger" data-target="vue">VueJs</li>
+            </ul>
+        </div>
+        <div class="content active react">
+            <h3>ReactJs</h3>
+            <p>React is a JavaScript library for building user interfaces. It was developed by Facebook and is now
+                maintained by Facebook and a community of individual developers and corporations. React allows
+                developers to build complex user interfaces with a modular approach, using reusable components. It is
+                known for its speed and efficient update mechanism, making it ideal for building high-performance and
+                dynamic applications.</p>
+        </div>
+        <div class="content angular">
+            <h3>Angular</h3>
+            <p>Angular is a comprehensive JavaScript framework for building single-page applications (SPAs). Developed
+                and maintained by Google, Angular provides a platform for building complex and scalable applications
+                using a modular architecture. It features a rich set of built-in services, directives, and tools, making
+                it easy for developers to build and test applications. Angular uses two-way data binding and a
+                component-based architecture, allowing for the creation of reusable UI components and efficient
+                management of application state.</p>
+        </div>
+        <div class="content vue">
+            <h3>VueJs</h3>
+            <p>Vue.js is a JavaScript framework for building user interfaces. It was created by Evan You and is now
+                maintained by a large open-source community. Vue is known for its simplicity, lightweight size, and
+                flexibility. It uses a component-based architecture and a template-based syntax, making it easy for
+                developers to create reusable UI components. Vue also offers a reactive data model, making it efficient
+                for updating and rendering changes in real-time. The framework has a growing popularity and is often
+                used for building high-performance and user-friendly single-page applications (SPAs).</p>
+        </div>
+    </div>
     <script src="assets/bundle.js"></script>
 </body>
 

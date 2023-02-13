@@ -1,0 +1,39 @@
+.tooltip {
+    position: relative;
+    display: inline-block;
+    color: #353534;
+    border-bottom: 1px dotted #2c2c18;
+    cursor: pointer;
+}
+
+.tip {
+    border-radius: 10px;
+    width: 150px;
+    background-color: #2c2c18;
+    color: #82826D;
+    text-align: center;
+    padding: 5px 0;
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.tip.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -4px;
+    border-width: 4px;
+    border-style: solid;
+    border-color: transparent;
+    border-top-color: #2c2c18;
+}
