@@ -23,7 +23,8 @@ class Tabs {
     }
     toggleContent(e) {
         // remove current active classes
-        this.container.querySelectorAll('.content').forEach(item => {
+        document.querySelectorAll('.content').forEach(item => {
+            console.log(item);
             item.classList.remove('active');
         });
         // add new active class

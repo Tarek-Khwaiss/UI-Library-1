@@ -20,15 +20,15 @@
     border: #82826D solid 2px;
 }
 
-
-
 .tabs .content {
-    background: #fbfbfb;
+    background-color: #FFFDE2;
+    color: #82826D;
     padding: 10px 20px;
-    border-radius: 6px;
+    border-radius: 20px;
+    border: 5px solid #82826D;
     display: none;
 }
 
-.tabs .content .active {
+.tabs .content.active {
     display: block;
 }
